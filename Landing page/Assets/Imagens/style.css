@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Texto */
+
+h1{
+    font-size: 64px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h4{
+    font-weight: 300;
+}
+
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+
+    /* Código desativado, porém funcionava.
+
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 40px;
+    gap: 70%;
+    z-index: 10000;*/
+
+}
+
+.icon img {
+    width: 64px;
+    height: 64px;
+}
+
+
+/* Botão de contato*/
+
+    .contact a{
+        box-sizing: border-box;
+        background: white;
+        border: 1px solid #000000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+        text-decoration: none;
+
+
+        /*
+        width: 112px;
+        height: 44px;
+        left: 1193px;
+        top: 82px; */
+
+    }
+
+    .contact .icon-arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+.contact a:hover{
+    filter: invert(1);
+}
+
+#banner{
+
+    /*
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 329px;
+    padding: 40px;
+    gap: 40%;*/
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6rem;
+    top: 329px;
+
+}
+
+
+.titulo{
+
+    margin-right: 10%;
+}
+
+
+/* Float menu */
+
+.menu:hover .mostrar{
+    display: block;
+    width: 100%;
+    color: #000000;
+}
+
+.menu .mostrar{
+    width: 100%;
+    display: none;
+    line-height: 64px;
+}
+
+.menu .mostrar a{
+    text-decoration: none;
+    color: black;
+    filter: grayscale(1);
+}
+
+
+
+/*Banner de imagem*/
+
+.imagem {
+    position: absolute;
+    display: block;
+    justify-content: flex-end;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+
+
+    /*top: 0px;
+    right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;*/
+}
+
+    .imagem img{
+        width: 935px;
+        height: 240px;
+    }
+
+
+
+
+/* Bloco de atendimento*/
+
+#bloco{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    top: 860px;
+}
+
+
+/* Subtitulos seções */
+
+.subtitulo{
+    width: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    margin-top:6rem;
+
+}
+
+.quadros{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    column-gap: 6rem;
+    margin-bottom: 6rem;
+
+}
+
+
+/*Alinhamento de itens dentro do bloco*/
+
+.fotos{
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.video{
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+    .video img{
+        padding: 10px;
+    }
+
+.manipulacao{
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+/*Sobre*/
+
+.sobre{
+    width: 100%;
+
+}
+
+.sobre .subtitulo {
+    width: 100%;
+}
+
+.sobre-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 6rem;
+    gap: 40px;
+}
+
+
+.sobre .sobre-content p{
+    width: 50%;
+    height: auto;
+    text-align: justify;
+
+}
+
+
+/* Navegação e portfolio */
+
+.nav-portfolio .lista{
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+.lista a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.lista a:hover{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+/* imagens do portgfolio */
+
+.container-portfolio{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 240px;
+    padding: 1.5rem;
+    grid-gap: 1.5rem;
+    margin: 6rem;
+}
+
+
+.item-portfolio{
+    position: relative;
+}
+
+.item-portfolio .img-portfolio{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px 0 0 0 ;
+
+}
+
+.h-1{
+    grid-row: span 1;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+
+}
+
+.w-2{
+    grid-column: span 2;
+
+}
+
+
+@media(max-width:768px){
+    .container-portfolio {
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+    }
+
+    .h-2{
+        grid-row: span 1;
+    }
+    
+    .w-2{
+        grid-row: span 1;
+    }
+
+    
+}
+
+
+
+
+/* Container de preços*/
+
+.precos{
+    width: 100%;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.inside-title{
+    padding-bottom: 3rem;
+
+}
+
+.inside-text{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10rem;
+    padding: 2px;
+    margin-top: 0.5rem;
+
+
+    border-bottom: 1px solid black;
+
+}
+
+.box{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 24px;
+    border: 2px solid white;
+
+
+}
+
+.box:hover{
+
+    border: 2px solid #000000;
+
+}
+
+
+
+/* Botão de agendamento*/
+
+    .container .agendar a{
+        box-sizing: border-box;
+        background: white;
+        border: 1px solid #000000;
+
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+        text-decoration: none;
+
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+
+
+    }
+
+    .container .agendar .icon-arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+    a:hover{
+    filter: invert(1);
+    }
+
+
+
+/* Blog */
+
+.container-blog{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    padding: 32px;
+    gap: 32px;
+    
+}
+
+.card-blog{
+    display: block;
+    align-items: center;
+    text-align: left;
+}
+
+.card-blog p{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: fit-content;
+}
+
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    margin-top: 6rem;
+    margin-bottom: 0px;
+    background: linear-gradient(282.01deg, #BFC1D5 7.12%, rgba(191, 193, 213, 0) 90.32%);
+}
+
+
+#footer p {
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.footer .news .input {
+
+    width: 482px;
+    height: 44px
+}
